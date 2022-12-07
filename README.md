@@ -17,6 +17,7 @@ Users should be able to:
 ### Links
 
 -   Live Site URL: [GitHub pages](https://uafederez.github.io/News-Home-Page/)
+-   Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage-hPP5iM3KGv)
 
 ### Built with
 
