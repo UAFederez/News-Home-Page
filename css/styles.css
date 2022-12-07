@@ -203,7 +203,6 @@ main p {
     .primary-article {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .primary-content {
@@ -231,7 +230,7 @@ main p {
     }
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 48rem) {
     .primary-content {
         display: flex;
         flex-direction: column;
