@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [GitHub pages](https://uafederez.github.io/News-Home-Page/)
 
 ### Built with
 
