@@ -88,13 +88,14 @@ main p {
 .new-articles > .new-title {
     color: var(--col-primary-500);
     font-size: 1.75rem;
+    font-weight: 800;
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
 
 .new-articles article {
-    --space: 2rem;
+    --space: 1.5rem;
     padding-bottom: var(--space);
     margin-bottom: var(--space);
     border-bottom: 1px solid var(--col-neutral-400);
@@ -109,6 +110,7 @@ main p {
 .new-articles article .title {
     line-height: 1rem;
     margin-block: 0;
+    font-weight: 800;
     margin-bottom: 1rem;
 }
 
@@ -120,6 +122,10 @@ main p {
 .new-articles article .title a:hover,
 .new-articles article .title a:focus-visible {
     color: var(--col-primary-500);
+}
+
+.primary-description {
+    color: var(--col-neutral-400);
 }
 
 .new-articles article .subtitle {
@@ -160,6 +166,11 @@ main p {
     margin-bottom: 1rem;
     font-weight: bold;
     color: var(--col-neutral-600);
+}
+
+.img-desktop,
+.img-mobile {
+    width: 100%;
 }
 
 .article-content > .article-title a {
