@@ -1,0 +1,22 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --col-primary-500: hsl(35, 77%, 62%);
+
+    --col-secondary-500: hsl(5, 85%, 73%);
+    --col-secondary-400: hsl(5, 85%, 63%);
+    --col-secondary-300: hsl(5, 85%, 53%);
+
+    --col-neutral-900: hsl(36, 100%, 99%);
+    --col-neutral-600: hsl(233, 8%, 79%);
+    --col-neutral-400: hsl(236, 13%, 42%);
+    --col-neutral-200: hsl(240, 100%, 5%);
+
+    --ff-body-primary: "Inter", sans-serif;
+    --container-width: 70rem;
+}

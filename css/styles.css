@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800&display=swap");
+@import url("./root-styles.css");
+
+body {
+    width: 100%;
+    font-family: var(--ff-body-primary);
+    background-color: var(--col-neutral-900);
+}
+
+main {
+    max-width: var(--container-width);
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+main {
+    margin-top: 6rem;
+}
+
+.img-desktop {
+    display: none;
+}
+
+.img-mobile {
+    display: block;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main > img {
+    width: 100%;
+}
+
+.h3 {
+    margin-block: 1rem;
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 800;
+}
+
+main p {
+    line-height: 1.8;
+}
+
+.btn-cta {
+    background-color: var(--col-secondary-400);
+    border: none;
+    color: var(--col-neutral-900);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+    cursor: pointer;
+    padding: 1rem 2.25rem;
+    font-family: var(--ff-body-primary);
+}
+
+.btn-cta:hover,
+.btn-cta:focus-visible {
+    background-color: var(--col-neutral-200);
+}
+
+.btn-cta:active {
+    background-color: var(--col-secondary-500);
+}
+
+.new-articles {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--col-neutral-200);
+    color: var(--col-neutral-900);
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.new-articles > .new-title {
+    color: var(--col-primary-500);
+    font-size: 1.75rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.new-articles article {
+    --space: 2rem;
+    padding-bottom: var(--space);
+    margin-bottom: var(--space);
+    border-bottom: 1px solid var(--col-neutral-400);
+}
+
+.new-articles article:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.new-articles article .title {
+    line-height: 1rem;
+    margin-block: 0;
+    margin-bottom: 1rem;
+}
+
+.new-articles article .title a {
+    color: var(--col-neutral-900);
+    text-decoration: none;
+}
+
+.new-articles article .title a:hover,
+.new-articles article .title a:focus-visible {
+    color: var(--col-primary-500);
+}
+
+.new-articles article .subtitle {
+    margin-block: 0;
+    color: var(--col-neutral-600);
+}
+
+.article-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-block: 4rem;
+}
+
+.article-list > article {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.img-container {
+    aspect-ratio: calc(200 / 254);
+    height: 100%;
+    background: var(--style-img);
+    background-size: cover;
+    background-position: center center;
+    min-width: 6rem;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.article-content > .article-index {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--col-neutral-600);
+}
+
+.article-content > .article-title a {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+    color: var(--col-neutral-200);
+}
+
+.article-content .article-title a:hover,
+.article-content .article-title a:focus-visible {
+    color: var(--col-secondary-300);
+}
+
+.article-content > .article-subtitle {
+    margin: 0;
+    color: var(--col-neutral-400);
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 48rem) {
+    .featured {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 7fr 3fr;
+    }
+
+    .primary-article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .primary-content {
+        display: grid;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .new-articles {
+        margin-top: 0;
+    }
+
+    main {
+        margin-top: 2rem;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .primary-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    .article-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
